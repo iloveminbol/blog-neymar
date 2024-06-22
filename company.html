@@ -1,0 +1,159 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=c, initial-scale=1.0" />
+    <title>Company</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      body {
+        background-image: url("wave.svg");
+        background-size: 370%;
+        background-repeat: no-repeat;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .title {
+        text-align: center;
+        color: rgb(208, 43, 43);
+        font-size: 70px;
+        font-family: "WindSong", cursive;
+      }
+      .container-flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .container {
+        position: relative;
+        width: 640px;
+        height: 426px;
+      }
+      .big-image {
+        position: absolute;
+        width: 100%;
+      }
+      .big-image img {
+        border-radius: 8px;
+        width: 100%;
+      }
+      .image-text {
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+        padding: 1px 6px;
+        background-color: rgba(255, 248, 248, 0.699);
+        border-radius: 10px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      h2 {
+        font-family: "Roboto", sans-serif;
+      }
+      .article-container {
+        margin: 20px 70px;
+      }
+      .description p {
+        text-align: justify;
+        line-height: 1.8;
+        text-indent: 80px;
+        font-family: "Roboto", sans-serif;
+      }
+      .companies {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .company {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px 10px;
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 8px grey;
+      }
+      .company img {
+        border-radius: 10px;
+      }
+
+      .company-description h4 {
+        padding: 0;
+        margin: 0;
+        font-size: 25px;
+      }
+      .company-description p {
+        width: 450px;
+        font-family: "Roboto", sans-serif;
+        line-height: 1.8;
+        text-indent: 80px;
+        text-align: justify;
+      }
+      .reveal {
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 2s;
+      }
+
+      .active {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <h1 class="title">Honda</h1>
+      <div class="container-flex">
+        <div class="container">
+          <div class="big-image">
+            <img src="https://asset.kompas.com/crops/6dstcOUn3pOZPRXkc_JIOKGKtYg=/128x149:1148x829/1200x800/data/photo/2024/01/10/659e34c608b85.png" alt="" />
+            <div class="image-text">
+              <h3>Be Better</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="article-container">
+        <div class="description">
+          <h2>Have you ever heard about Silicon Valley?</h2>
+          <p>Silicon Valley is......</p>
+        </div>
+        <div class="companies">
+          <h2>3 Big Companies That's Located in Silicon Valley</h2>
+          <div id="google" class="company reveal">
+            <img src="https://e7.pngegg.com/pngimages/998/644/png-clipart-honda-logo-honda-logo-car-honda-civic-type-r-honda-nsx-honda-angle-emblem.png" alt="Google" width="450px" />
+            <div class="company-description">
+              <h4>Google</h4>
+              <p>Founded in 1998 .....</p>
+            </div>
+          </div>
+          <!-- tambahkan Facebook dan Netflix disini-->
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script>
+    window.addEventListener("scroll", reveal);
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      reveals.forEach((reveal) => {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveal.getBoundingClientRect().top;
+        var revealPoint = 40;
+
+        if (revealTop < windowHeight - revealPoint) {
+          reveal.classList.add("active");
+        } else {
+          reveal.classList.remove("active");
+        }
+      });
+    }
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</html>

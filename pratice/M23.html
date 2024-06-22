@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 80%;
+        border: 2px solid black;
+    }
+    .w{
+        display: block;
+        width: 50%;
+        margin-bottom: 20px;
+        transition-duration: 3s;
+    }
+    .container:hover .w{
+        margin-left: 200px;
+        width: 70px;
+    }
+    .a1{
+        transition-timing-function: ease;
+    }
+    .a2{
+        transition-timing-function: ease-in;
+    }
+    .a3{
+        transition-timing-function: ease-in-out;
+     }
+</style>
+<body>
+    <div class="container">
+        <h1>ease</h1>
+        <div class="w">
+            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/5c/Spongebob-squarepants.png/200px-Spongebob-squarepants.png" alt=""
+            class="a1"
+            />
+        </div>
+    </div>
+    <div class="container">
+        <h1>ease <output></output></h1>
+        <div class="w">
+            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/5c/Spongebob-squarepants.png/200px-Spongebob-squarepants.png" alt=""
+            class="a2"
+            />
+        </div>
+    </div>
+    <div class="container">
+        <h1>ease</h1>
+        <div class="w">
+            <img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/5c/Spongebob-squarepants.png/200px-Spongebob-squarepants.png" alt=""
+            class="a3"
+            />
+        </div>
+    </div>
+</body>
+</html>

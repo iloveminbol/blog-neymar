@@ -1,0 +1,323 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universal Art</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" href="main.js" />
+    <script
+      src="https://kit.fontawesome.com/
+f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          class="header-icon"
+          src="https://images.tokopedia.net/img/cache/215-square/GAnVPX/2021/8/4/2edd5ac4-3127-4bb8-9c20-0e1809984289.jpg"
+          alt=""
+        />
+        <h3 class="title"><a href="index.html">Cobee The Coder</a></h3>
+        <nav>
+          <a href="project.html">Project</a>
+          <a href="kontak.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- <button>Show Modal</button>
+    <div class="modal-container">
+      <div class="modal">
+        <h3>This is Modal</h3>
+        <span>x</span>
+      </div>
+    </div> -->
+
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h1
+            class="jumbotron-title"
+            onmouseover="changeTitle(this)"
+            onmouseout="changeTitleBack(this)"
+          >
+            Get Programming Tips Here!
+          </h1>
+          <div class="header-flex">
+            <div>
+              <h2 class="jumbotron-text">
+                Just new in programming world?
+                <br />
+                Let's Start with Creating Simple
+                <span style="color: #3169c3">Game and Website!</span>
+              </h2>
+              <div class="mini-text-flex">
+                <p class="mini-text">Learn Basic Programming here</p>
+
+                <button id="icon-up" onclick="changeText()">
+                  <i class="far fa-hand-point-up"></i>
+                </button>
+                <button id="icon-down" class="icon-down">
+                  <i class="far fa-hand-point-down" onclick="changeText()"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                onmouseover="changeImage(this)"
+                onmouseout="changeImageBack(this)"
+                class="jumbotron-img"
+                src="https://i0.wp.com/timedooracademy.com/wp-content/uploads/2022/10/Kelapa-Gading.jpeg"
+                alt="gambar"
+                width="auto"
+                height="300"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <svg
+        class="wave1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#0018ca"
+          fill-opacity="1"
+          d="M0,96L18.5,90.7C36.9,85,74,75,111,80C147.7,85,185,107,222,138.7C258.5,171,295,213,332,202.7C369.2,192,406,128,443,133.3C480,139,517,213,554,234.7C590.8,256,628,224,665,208C701.5,192,738,192,775,176C812.3,160,849,128,886,128C923.1,128,960,160,997,192C1033.8,224,1071,256,1108,229.3C1144.6,203,1182,117,1218,69.3C1255.4,21,1292,11,1329,21.3C1366.2,32,1403,64,1422,80L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"
+        ></path>
+      </svg>
+      <svg
+        class="wave2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#5000ca"
+          fill-opacity="1"
+          d="M0,96L18.5,90.7C36.9,85,74,75,111,80C147.7,85,185,107,222,138.7C258.5,171,295,213,332,202.7C369.2,192,406,128,443,133.3C480,139,517,213,554,234.7C590.8,256,628,224,665,208C701.5,192,738,192,775,176C812.3,160,849,128,886,128C923.1,128,960,160,997,192C1033.8,224,1071,256,1108,229.3C1144.6,203,1182,117,1218,69.3C1255.4,21,1292,11,1329,21.3C1366.2,32,1403,64,1422,80L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"
+        ></path>
+      </svg>
+
+      <section id="slider" class="section-slider">
+        <div class="image-slider">
+          <div class="slide active">
+            <img
+              src="https://cdn.oneesports.gg/cdn-data/2022/02/GenshinImpact_YaeMiko_Reading.jpg"
+              alt=""
+            />
+            <div class="slide-text">
+              <h2>Yaemiko</h2>
+              <p>aihoaifhmakajbdnief</p>
+            </div>
+          </div>
+
+          <div class="slide active">
+            <img
+              src="https://www.siliconera.com/wp-content/uploads/2023/08/how-to-earn-lynette-in-genshin-impact.jpg"
+              alt=""
+            />
+            <div class="slide-text">
+              <h2>lynette</h2>
+              <p>wqohdqdwoidwhqobobaseufafeo</p>
+            </div>
+          </div>
+
+          <div class="slide active">
+            <img
+              src="https://cdn2.unrealengine.com/image-1-3840x2160-6fb63d0b460b.jpg"
+              alt=""
+            />
+            <div class="slide-text">
+              <h2>Sumeru</h2>
+              <p>apapapsalpalplaspalspasl</p>
+            </div>
+          </div>
+
+          <div class="slide active">
+            <img
+              src="https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2022/10/16/3973109400.jpg"
+              alt=""
+            />
+            <div class="slide-text">
+              <h2>Nilou</h2>
+              <p>apalaj</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img
+              src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/genshin-impact-furina-idle-animation.jpg"
+              alt=""
+            />
+            <div class="slide-text">
+              <h2>Furina</h2>
+              <p>babwqabbabwa?</p>
+            </div>
+          </div>
+
+          <!-- Copy paste div class slide di atas (tanpa kata ) sampai ada 5 buah div -->
+          <div class="navigation">
+            <div class="slider-btn active"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------ Meeting 10 ----------------------- -->
+      <div class="main-content">
+        <aside>
+          <div class="profile">
+            <h3 class="aside-title">It's Cobee</h3>
+            <img
+              class="profile-picture"
+              src="https://i.pinimg.com/236x/ed/3c/56/ed3c5668f6c93125b59254f476c259a5.jpg"
+              alt="Cobee"
+              width="150px"
+              height="auto"
+            />
+            <!-- ------------------------ Meeting 11----------------------- -->
+            <div class="toggle">
+              <button class="btn" id="green">
+                <i class="fa fa-thumbs-up fa-lg"></i>
+              </button>
+              <button class="btn" id="red">
+                <i class="fa fa-thumbs-down fa-lg"></i>
+              </button>
+            </div>
+          </div>
+        </aside>
+
+        <div class="content">
+          <!-- ------------------------ Meeting 11----------------------- -->
+          <article id="my-project">
+            <h3 class="article-title">My Project</h3>
+            <div class="project-container">
+              <div class="project">
+                <img
+                  src="https://cdn.medcom.id/images/content/2021/11/03/1348021/maqDbEnsXH.jpg"
+                  alt="rally"
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">Desert Rally</h4>
+                <p class="project-description">
+                  Desert Rally Game is using Scratch 3 as a platform
+                </p>
+              </div>
+              <div class="project">
+                <img
+                  src="https://wearecollins.imgix.net/uploads/01_Spotify.gif?auto=format%2Ccompress&dpr=2.63&fit=max&q=90&w=400"
+                  alt="memory-game"
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">Memory Game</h4>
+                <p class="project-description">
+                  Memory Game is using Phaser as a Javascript Framework
+                </p>
+              </div>
+            </div>
+            <div class="project-container">
+              <div class="project">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_Boring_Company_Logo.svg/1200px-The_Boring_Company_Logo.svg.png"
+                  alt="platformer"
+                  width="450px"
+                  height="210px"
+                />
+                <h4 class="project-title">Platformer</h4>
+                <p class="project-description">
+                  Platformer Game is using Construct 3 as a platform
+                </p>
+              </div>
+              <div class="project">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Shopee.svg/1024px-Shopee.svg.png"
+                  alt="florist"
+                  width="450px"
+                  height="210px"
+                />
+                <h4 class="project-title">Flower Shop Website</h4>
+                <p class="project-description">
+                  E-commerce Website for Flowers and Bouquet Shop
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article id="video">
+            <div class="item-video">
+              <h3 class="article-title">What is Coding?</h3>
+              <iframe
+                class="video-content"
+                width="700px"
+                height="400px"
+                src="https://www.youtube.com/embed/XMZFUnAgOqs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+
+              <h3 class="article-title">Coding is Not Difficult !</h3>
+              <iframe
+                class="video-content"
+                width="700px"
+                height="400px"
+                src="https://www.youtube.com/embed/hb7Q33ysCwI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </article>
+
+          <article id="maps">
+            <div class="maps">
+              <h3 class="article-title">Location</h3>
+              <div class="location">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.1041217472043!2d115.23826581416502!3d-8.681647890800283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd240f88bb37a69%3A0xdf8443f1fabfe305!2sPT.Timedoor%20Indonesia!5e0!3m2!1sen!2sid!4v1622688384272!5m2!1sen!2sid"
+                  width="500"
+                  height="350"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+                <div class="maps-text">
+                  <!-- <h3>Timedoor Coding Academy</h3>
+                                <p>Timedoor Coding Academy adalah bagian dari PT Timedoor Indonesia, <br>
+                                tempat penulis belajar konsep programming sehingga bisa membuat Blog ini.</p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <!-- ------------------------ Meeting 10 ----------------------- -->
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">Cobee The Junior Programmer</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 2021. Cobee. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
